@@ -1,0 +1,20 @@
+.container .jumbotron.about{
+    height:500px;
+}
+.container .jumbotron.portfolio{
+    height:800px;
+}
+
+.left-pull {
+    margin-left:0!important;
+ }
+
+.right-pull {
+    margin-right:0!important;
+}
+
+.footer {
+    position: absolute;
+    bottom: 10px;
+    left: 80px;
+}
