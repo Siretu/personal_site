@@ -7,12 +7,13 @@
     <link rel="stylesheet" type="text/css" href="./personal/custom.css" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="./personal/custom.js"></script>
   </head>
   <body>
     <div class="navbar navbar-inverse navbar-static-top">
       <div class="container">
 	<div class="navbar-header">
-	  <a href="#" class="navbar-brand">Erik Ihrén</a>
+	  <a href="#about" class="navbar-brand">Erik Ihrén</a>
 	  
           <button class="navbar-toggle" data-toggle="collapse" data-target="#navigationMenu">
             <span class="icon-bar"></span>
@@ -21,9 +22,9 @@
           </button>
 	</div>
         <div class="collapse navbar-collapse" id="navigationMenu">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a data-toggle="tab" href="#about">About</a></li>
-            <li><a data-toggle="tab" href="#portfolio">Portfolio</a></li>
+          <ul class="nav navbar-nav navbar-right nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#about" class="about">About</a></li>
+            <li><a data-toggle="tab" href="#portfolio" class="portfolio">Portfolio</a></li>
             <li><a data-toggle="tab" href="#contact">Contact</a></li>
 	    <li><a target="_blank" href="./personal/cv.pdf">Resume</a></li>
             <li class="dropdown">
@@ -52,13 +53,6 @@
 		I am currently working towards a Master's degree in Computer Science at the Royal Institute of Technology (KTH) in Stockholm, Sweden. I am in my third year out of five and I'm actively looking for internships and other opportunities to improve as a programmer. I'm willing to relocate, especially for internships in America.
 		<br><br>
 		This site contains a portfolio with descriptions of some of the larger projects I've done as well as some general contact information.
-
-<!--		My name is Erik Ihrén and I am working towards a Master's degree in Computer Science at the Royal Insitute of Technology (KTH) in Stockholm, Sweden. I am currently in my third year out of five and I'm actively looking for internships and other opportunities to develop as a programmer.
-		<br><br>
-		Since an early age I've been into all kinds of technology, writing text-based adventure games and assembling computers in my early teens. With personal interest for subjects like Artificial Intelligence and game development, I've always pushed myself to create and experiment with ideas I have. Technology, especially programming, is and always will be a passion of mine.
-		<br><br>
-		This site contains a portfolio of descriptions of some of the larger projects I've done as well as some general contact information. -->
-		<br><br>
 		My resume is available <a target="_blank" href="./personal/cv.pdf">here</a>.
 		
 	      </div>
@@ -70,9 +64,9 @@
 	</div>
 	<div id="portfolio" class="tab-pane">
 	  <div class="jumbotron portfolio">	  
-	    <h2>Portfolio</h2>
+	    <h2 class="projec-special">Portfolio</h2>
 
-	    <div class="row">
+	    <div class="row project-special project-cruisercommand">
 	      <div class="col-md-8">
 		<p>Cruiser Command</p>
 		Cruiser Command is a multiplayer strategy game created as a custom mod for Starcraft 2. It's a highly tactical game requiring a lot of teamwork to come out victorious over the other team.
@@ -82,31 +76,133 @@
 		Since it went public it has been played by thousands of players and maintained an average rating of over <b>4.7/5</b> from over 2000 reviews. The game has a loyal fanbase with some players having played the game for thousands of hours. There's also an active <a href="http://www.cruisercommand.com">forum</a> with over 150 registered users.
 		<br><br>
 		A user-made video compilation can be found <a href="https://www.youtube.com/watch?v=EVvC6QygN80">here</a>
+		<div class="readmore extended-cruisercommand">
+		  <br>
+		  Cruiser Command has been my by far largest personal project for the last couple of years. It currently contains around 25,000 lines of code, 95% of it written by me alone. The community around the game have also helped out by contributing the loading screen and the interior design of the spaceships. 
+		  <br><br>
+		  Over the years of development, I've improved a lot as a developer. I've dealt with all kind of weird bugs, the easily reproducible ones and the ones that only show up once in a blue moon. Developing a game as complex as Cruiser Command means I got the chance to try out all kinds of different programming. 
+		  <br><br>
+		  In addition to using modularized code for different parts of the spaceship utilities, I also dealt with advanced Artificial Intelligence. The A.I provided bots to perform a multitude of different tasks in the game. Many were even performed better than the best players could accomplish (which ended up having the unintended effect of experienced players preferring A.I players on their team to inexperienced players). 
+		  <br><br>
+		  I also worked on some interesting math problems. For example an A.I weapon aiming prediction to fire weapons that hit the enemy based on the direction and speed they are going. Because of the map layout (basically a <a href="https://en.wikipedia.org/wiki/Torus">torus </a> projected out on a rectangle), I had to figure out a closest distance formula to make the A.I travel around the map efficiently.
+		  <br><br>
+
+		  Unfortunately, the way Starcraft 2 mods work, it's locked inside a binary file and is not available in human-readable format unless you open it in the editor. For the sake of showing some source code, I've decided to upload the full extracted source code <a href="./personal/cc_source.cpp" target="_blank">here.</a> Be aware that it's 25,000 rows of raw code without syntax highlighting. 
+		</div>
+		<br><br><a class="link" id="l_cruisercommand" href="#cruisercommand">Read more...</a>
 	      </div>
 	      <div class="col-md-4">
 		<br><br>
-		<img class="thumbnail pull-right" src="./personal/CCportfolio.png" alt="...">
+		<a href="./personal/images/CC1.png" target="_blank">
+		  <img class="thumbnail pull-right" src="./personal/images/CC1Thumb.png" alt="...">
+		</a>
+		<div class="readmore extended-cruisercommand">
+		  <a href="./personal/images/CC2.png" target="_blank">
+		    <img class="thumbnail pull-right" src="./personal/images/CC2Thumb.png" alt="...">
+		  </a>
+		</div>
 	      </div>
 	    </div>
-	    <br><br>
-	    <div class="row">
+	    <div class="project-special">
+	      <br>
+	    </div>
+	    <div class="row project-special project-superwebrecorder">
 	      <div class="col-md-8">
 		<p>SuperWebRecorder</p>
-		During the spring of 2014 I spent several months working with 8 other KTH students on a project for the company The Beta Family. The Beta Family works with offering crowdsourced beta testing for companies by connecting a community of beta testers with a community of devlopers. To simplify this, we were tasked to create an application that records users' website experiences. This meant recording everything that happened on the site, following the user's path throughout the different pages of the site and recording the interactions. The recordings were then saved in a database to be replayed later on by the developer. It also included aggregation functions to combine replay data for visualizations such as heatmaps.
-<br><br>
-I was the project manager, but I also spent an active part on the programming group. It was a great experience and my first taste of programming in a slightly larger team. In the end, The Beta Family were very happy with the results and so were we. 
+		During the spring of 2014 I spent several months working with 8 other KTH students on a project for the company Beta Family. Beta Family works with offering crowdsourced beta testing for companies by connecting a community of beta testers with a community of developers. To simplify this, we were tasked to create an application that records users' website experiences. This meant recording everything that happened on the site, following the user's path throughout the different pages of the site and recording the interactions. The recordings were then saved in a database to be replayed later on by the developer. It also included aggregation functions to combine replay data for visualizations such as heatmaps.
+		<br><br>
+		I was the project manager, but I also spent an active part on the programming group. It was a great experience and my first taste of programming in a slightly larger team. In the end, Beta Family were very happy with the results and so were we. 
+		<br><br>
+
+		<div class="readmore extended-superwebrecorder">
+		  The project gave me experience in a lot of different web development areas. Since I was the project manager in addition to being part of the programming team, I went around and worked on most parts of the project and helped out when people got stuck. The project consisted of several different parts. There were the recording script recording everything the user does at the site and keeps track of all DOM changes. Everything that happens is serialized and sent as a JSON object to the back-end which handles it and inserts it properly in the database.
+		  <br><br>
+
+		  There's also the replay feature which fetches recordings from the database and replays them for the developer in control of the site with the recording. I spent most time on this part and, amongst other things, worked on making fully functional time controls to allow you to skip to any point of time in the replay.
+		  <br><br>
+
+		  There's the backend part with a MySQL database. For development reasons, we maintained support for both a MySQL and PostgreSQL database through a wrapper. We also performed a decent amount of penetration testing to root out any problems with SQL injections or stored XSS injections.
+		  <br><br>
+
+		  I spent a decent amount of time working on the front-end as well which was made in a combination of Zurb Foundation and AngularJS. I took the non-functional UI design made by another team made and connected it to the back-end and redesigned it as necessary.
+		  <br><br>
+		  Since this project was made for Beta Family, the code is not open source. However, you can see the result at their <a href="https://betafamily.com/webrecorder/demo" target="_blank">demo page</a>.
+
+		</div>
+
+		<a class="link" id="l_superwebrecorder" href="#superwebrecorder">Read more...</a>
 	      </div>
 
 	      <div class="col-md-4">
 		<br><br>
-		<img class="thumbnail pull-right" src="./personal/globe.jpg" alt="...">
+		<img class="thumbnail pull-right" src="./personal/images/webrecorder1.png" alt="...">
+		<div class="readmore extended-superwebrecorder">
+		  <a href="./personal/images/webrecorder2.png" target="_blank">
+		    <img class="thumbnail pull-right" src="./personal/images/webrecorder2thumb.png" alt="...">
+		  </a>
+		</div>
+	      </div>
+	    </div>
+	    <div class="project-special">
+	      <br>
+	    </div>
+	    <div class="row project-special project-kartobot">
+	      <div class="col-md-8">
+		<p> Kartobot </p>
+		During the spring of 2012, I started working on a robot project with two friends. The project was done as our final high school project and was to be done before summer graduation. One of my friends and I had already been working on a previous project based on building and programming a <a href="https://en.wikipedia.org/wiki/Quadcopter">quadcopter</a> from scratch. Since we were already interested on building and working on robots, we decided to make a new one for our project.
+		<br><br>
+		The kartobot travels around on the ground, equipped with an ultrasonic tower. The tower continually rotates back and forth with two opposite ultrasonic sensors on the top. This tower supplies continuous sensor information in regards to the robots distance to nearby objects. Since the tower is rotating, it is possible to draw a simple map of the surroundings. In addition to this, the robot keeps track of the map it draws and aims to explore it by automatically travelling around and avoiding new obstacles that it finds using a pathfinding algorithm.
+		<div class="readmore extended-kartobot">
+		  <br>
+		  In the project I was mainly responsible for the tower and the pathfinding while the others focused on tasks like the map drawing, the wireless communication to the computer and the navigation. 
+		  <br><br>
+		  Building and programming the tower rotation was relatively simple. I then tested out the margin of error to see what kind of measurements we could expect to get. We found that the ultrasonic sensors send out a pulse in a triangle in front of it instead of just straight forward, so sometimes the results was a bit off. 
+		  <br><br>
+		  For the pathfinding I implemented A* pathfinding algorithm that I optimized for the requirements of very low memory that we had. Using some smart compressing and a binary heap implementation, I managed to cut down memory usage to an acceptable level while at the same time making it hundred times faster.
+		  <br><br>
+		  The full source is available <a href="https://github.com/Siretu/kartobot">in my github repository.</a>
+		</div>
+		<br><br><a class="link" id="l_kartobot" href="#kartobot">Read more...</a>
+	      </div>
+	      <div class="col-md-4">
+		<br><br>
+		<a href="./personal/images/kartobot1.png" target="_blank">
+		  <img class="thumbnail pull-right" src="./personal/images/kartobot1thumb.png" alt="...">
+		</a>
+		<div class="readmore extended-kartobot">
+		  <a href="./personal/images/kartobot2.jpg" target="_blank">
+		    <img class="thumbnail pull-right" src="./personal/images/kartobot2thumb.png" alt="...">
+		  </a>
+		</div>
+	      </div>
+	    </div>
+	    <div class="project-special">
+	      <br>
+	    </div>
+	    <div class="row project-special project-zorkensburg">
+	      <div class="col-md-8">
+		<p> Zorkensburg </p>
+		Zorkensburg is a text-based adventure game written by me and a friend as a final project in a programming course in C++. The game is mostly an engine and contains a small worldfile as an example of the possibilities it gives. The example game is heavily inspired by the start of Zork, since it gives a lot of opportunities to showcase cool features.
+		<br><br>
+		The project was developed with the idea of making it easy to design new games for it without hard-coding doors and locks and other functionality. This idea grew into a complex and powerful scripting language. The scripting functionality is saved in the worldfile and can be saved and loaded to if you want to save your progress. The scripting allows you to implement all kinds of features like: lamp buttons (where you can't see the contents of the room if the light is turned off), Monster AI, traps that occur the first time that player enters a room and special sequences of actions to get to the next room (For example, pulling a rug to reveal a trap-door beneath it and then opening the trapdoor before being allowed to descend to the basement)
+		<div class="readmore extended-zorkensburg">
+		  <br>
+		  The scripting system is based on flags and can save states, some of which have special properties (items with the "lightsource" flag will light up rooms. The system is based on vectors of anonymous functions as well as a map to function pointers. It's made to be easily extendable and the scripting language is well documented over <a href="https://github.com/Siretu/kartobot">in my github repository.</a>
+		</div>
+		<br><br><a class="link" id="l_zorkensburg" href="#zorkensburg">Read more...</a>
+	      </div>
+	      <div class="col-md-4">
+		<br><br>
+		<a href="./personal/images/zorkensburg1.png">
+		  <img class="thumbnail pull-right" src="./personal/images/zorkensburg1thumb.png" alt="...">
+		</a>
 	      </div>
 	    </div>
 	  </div>
 	</div>
 	<div id="contact" class="tab-pane">
 	  <div class="jumbotron">
-	    <h2>Contact </h2>
+	    <h2>Contact </h2><br>
 	    <b>Location:</b> Stockholm, Sweden<br><br>
 	    <b>Email:</b> erikihr@gmail.com<br><br>
             <b>GitHub:</b> <a target="_blank" href="https://github.com/Siretu">GitHub</a><br><br>
@@ -115,9 +211,10 @@ I was the project manager, but I also spent an active part on the programming gr
 	</div>
       </div>
     </div>
+<!-- The disclaimer messes up on different screen sizes.
     <p class="footer visible-md-block hidden-xs hidden-sm">
       <i><b>Disclaimer: </b>This is a <a href="http://www.kth.se/gemensamt/disclaimer">personal website.</a></i>
-    </p>
+    </p> -->
 
   </body>
 </html>

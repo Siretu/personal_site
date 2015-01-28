@@ -1,20 +1,22 @@
-.container .jumbotron.about{
-    height:500px;
-}
-.container .jumbotron.portfolio{
-    height:800px;
+
+/* Always show scrollbar to prevent page jumping when pressing read more link */
+html {
+    overflow-y: scroll; 
 }
 
-.left-pull {
-    margin-left:0!important;
- }
-
-.right-pull {
-    margin-right:0!important;
-}
 
 .footer {
     position: absolute;
     bottom: 10px;
     left: 80px;
+}
+
+
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+    border: 0px;
+}
+
+.nav-tabs {
+    border-bottom:0px;
 }
