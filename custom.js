@@ -47,10 +47,12 @@ var initTabs = function(){
     }
 
     $('.nav-tabs a').click(function (e) {
-	$(this).tab('show');
-	var scrollmem = $('body').scrollTop();
-	window.location.hash = this.hash;
-	$('html,body').scrollTop(scrollmem);
+	if(!$(this).hasClass("resume")) {
+	    $(this).tab('show');
+	    var scrollmem = $('body').scrollTop();
+	    window.location.hash = this.hash;
+	    $('html,body').scrollTop(scrollmem);
+	}
     });
     $(document).on("click",".link",function (e) {
 	var scrollmem = $('body').scrollTop();

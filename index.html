@@ -26,7 +26,7 @@
             <li class="active"><a data-toggle="tab" href="#about" class="about">About</a></li>
             <li><a data-toggle="tab" href="#portfolio" class="portfolio">Portfolio</a></li>
             <li><a data-toggle="tab" href="#contact">Contact</a></li>
-	    <li><a target="_blank" href="./personal/cv.pdf">Resume</a></li>
+	    <li><a target="_blank" href="./personal/cv.pdf" class="resume">Resume</a></li>
             <li class="dropdown">
               <a href="#" data-toggle="dropdown">Social Media <b class="caret"></b></a>
               <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
@@ -46,9 +46,9 @@
 	    <h2> About me </h2>
 	    <div class="row">
 	      <div class="col-md-9">
-		My name is Erik Ihrén. Since an early age I've been into all kinds of technology, writing text-based adventure games and assembling computers in my early teens. I quickly got into the industry and interned at companies like <b>Netnod</b> and <b>Ericsson</b>. I also travelled to South Africa to work at <b>Domain Name Services</b> for two months in the summer of 2013. I enjoy participating in programming events and competition and have several top placements from competitions such as Spotify's Hockey Challenge.
+		My name is Erik Ihrén. Since an early age I've been into all kinds of technology, writing text-based adventure games and assembling computers in my early teens. I quickly got into the industry and interned at companies like <b>Netnod</b> and <b>Ericsson</b>. I also travelled to South Africa to work at <b>Domain Name Services</b> for two months in the summer of 2013. I enjoy participating in programming events and competition and have several top placements from programming competitions such as Spotify's Hockey Challenge.
 		<br><br>
-		In my free time, I've worked on developing a multiplayer strategy game mod for Starcraft 2, called <b>Cruiser Command</b>. It's played by players around the world with an average rating of over 4.7/5 out of thousands of reviews. Personal projects are important to me, and I enjoy spending time working and experimenting with ideas I have.
+		In my free time, I've worked on developing a multiplayer strategy game mod for Starcraft 2, called <b>Cruiser Command</b>. It's played by players around the world with an average rating of over 4.8/5 out of thousands of reviews. Personal projects are important to me, and I enjoy spending time working and experimenting with ideas I have.
 		<br><br>
 		I am currently working towards a Master's degree in Computer Science at the Royal Institute of Technology (KTH) in Stockholm, Sweden. I am in my third year out of five and I'm actively looking for internships and other opportunities to improve as a programmer. I'm willing to relocate, especially for internships in America.
 		<br><br>
@@ -73,7 +73,7 @@
 		<br><br>      
 		I started working on it in 2011 using Starcraft 2's Galaxy Editor. Since then I have kept developing and maintaining it while communicating with the active playerbase about their thoughts and ideas. 
 		<br><br>
-		Since it went public it has been played by thousands of players and maintained an average rating of over <b>4.7/5</b> from over 2000 reviews. The game has a loyal fanbase with some players having played the game for thousands of hours. There's also an active <a href="http://www.cruisercommand.com">forum</a> with over 150 registered users.
+		Since it went public it has been played by thousands of players and maintained an average rating of over <b>4.8/5</b> from over 2000 reviews. The game has a loyal fanbase with some players having played the game for thousands of hours. There's also an active <a href="http://www.cruisercommand.com">forum</a> with over 150 registered users.
 		<br><br>
 		A user-made video compilation can be found <a href="https://www.youtube.com/watch?v=EVvC6QygN80">here</a>
 		<div class="readmore extended-cruisercommand">
@@ -112,7 +112,6 @@
 		During the spring of 2014 I spent several months working with 8 other KTH students on a project for the company Beta Family. Beta Family works with offering crowdsourced beta testing for companies by connecting a community of beta testers with a community of developers. To simplify this, we were tasked to create an application that records users' website experiences. This meant recording everything that happened on the site, following the user's path throughout the different pages of the site and recording the interactions. The recordings were then saved in a database to be replayed later on by the developer. It also included aggregation functions to combine replay data for visualizations such as heatmaps.
 		<br><br>
 		I was the project manager, but I also spent an active part on the programming group. It was a great experience and my first taste of programming in a slightly larger team. In the end, Beta Family were very happy with the results and so were we. 
-		<br><br>
 
 		<div class="readmore extended-superwebrecorder">
 		  The project gave me experience in a lot of different web development areas. Since I was the project manager in addition to being part of the programming team, I went around and worked on most parts of the project and helped out when people got stuck. The project consisted of several different parts. There were the recording script recording everything the user does at the site and keeps track of all DOM changes. Everything that happens is serialized and sent as a JSON object to the back-end which handles it and inserts it properly in the database.
@@ -130,6 +129,7 @@
 
 		</div>
 
+		<br><br>
 		<a class="link" id="l_superwebrecorder" href="#superwebrecorder">Read more...</a>
 	      </div>
 
@@ -187,7 +187,7 @@
 		The project was developed with the idea of making it easy to design new games for it without hard-coding doors and locks and other functionality. This idea grew into a complex and powerful scripting language. The scripting functionality is saved in the worldfile and can be saved and loaded to if you want to save your progress. The scripting allows you to implement all kinds of features like: lamp buttons (where you can't see the contents of the room if the light is turned off), Monster AI, traps that occur the first time that player enters a room and special sequences of actions to get to the next room (For example, pulling a rug to reveal a trap-door beneath it and then opening the trapdoor before being allowed to descend to the basement)
 		<div class="readmore extended-zorkensburg">
 		  <br>
-		  The scripting system is based on flags and can save states, some of which have special properties (items with the "lightsource" flag will light up rooms. The system is based on vectors of anonymous functions as well as a map to function pointers. It's made to be easily extendable and the scripting language is well documented over <a href="https://github.com/Siretu/kartobot">in my github repository.</a>
+		  The scripting system is based on flags and can save states, some of which have special properties (items with the "lightsource" flag will light up rooms. The system is based on vectors of anonymous functions as well as a map to function pointers. It's made to be easily extendable and the scripting language is well documented over <a href="https://github.com/Siretu/zorkensburg">in my github repository.</a>
 		</div>
 		<br><br><a class="link" id="l_zorkensburg" href="#zorkensburg">Read more...</a>
 	      </div>
