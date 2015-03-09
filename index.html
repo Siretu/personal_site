@@ -198,6 +198,28 @@
 		</a>
 	      </div>
 	    </div>
+	    <div class="project-special">
+	      <br>
+	    </div>
+	    <div class="row project-special project-crashcompile">
+	      <div class="col-md-8">
+		<p> Crash and Compile </p>
+		Crash and Compile is meant as a fun game to play with friends. It's based on the idea of doing competive programming together in a more relaxed setting. Using the crash and compile web application, you and your friends can create their own party, be assigned a programming problem that you work on individually to try and solve it first. Your code is automatically compiled and run every two minutes and you can see the progress of everyone else in the party.
+		<br><br>
+		The project naturally introduces some security concerns. First of all, it uses a database which means the normal SQL injection attack vector that has to be dealt with but more importantly, running user-written code on the server opens up a world of trouble that has to be handled. The way I dealt with this is to create a new limited docker instance for each new program.
+		<div class="readmore extended-crashcompile">
+		  <br>
+		  This project is still a work-in-progress and I tend to work a bit on it every now and then. It's available live at <a href="http://crash.cruisercommand.com/crashcompile">http://crash.cruisercommand.com/crashcompile</a> with the login guest:secretpassword. The project is open source and can be found at <a href="https://github.com/Siretu/crashcompile">GitHub</a>.
+		</div>
+		<br><br><a class="link" id="l_crashcompile" href="#crashcompile">Read more...</a>
+	      </div>
+	      <div class="col-md-4">
+		<br><br>
+		<a href="./personal/images/crashcompile.png">
+		  <img class="thumbnail pull-right" src="./personal/images/crashcompilethumb.png" alt="...">
+		</a>
+	      </div>
+	    </div>
 	  </div>
 	</div>
 	<div id="contact" class="tab-pane">

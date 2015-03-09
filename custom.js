@@ -5,7 +5,7 @@ if (location.hash) {
     }, 1);
 }
 
-var projects = ["cruisercommand","superwebrecorder","kartobot","zorkensburg"];
+var projects = ["cruisercommand","superwebrecorder","kartobot","zorkensburg","crashcompile"];
 
 var fixHash = function(instant) {
     var hash = window.location.hash.substring(1);
