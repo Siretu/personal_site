@@ -30,7 +30,6 @@
             <li class="dropdown">
               <a href="#" data-toggle="dropdown">Social Media <b class="caret"></b></a>
               <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                <li><a target="_blank" href="https://www.facebook.com/erik.ihren">Facebook</a></li>
                 <li><a target="_blank" href="https://github.com/Siretu">GitHub</a></li>
                 <li><a target="_blank" href="https://www.linkedin.com/pub/erik-ihr%C3%A9n/67/218/35a">LinkedIn</a></li>
               </ul>
@@ -46,11 +45,11 @@
 	    <h2> About me </h2>
 	    <div class="row">
 	      <div class="col-md-9">
-		My name is Erik Ihrén. Since an early age I've been into all kinds of technology, writing text-based adventure games and assembling computers in my early teens. I quickly got into the industry and interned at companies like <b>Netnod</b> and <b>Ericsson</b>. I also travelled to South Africa to work at <b>Domain Name Services</b> for two months in the summer of 2013. I enjoy participating in programming events and competition and have several top placements from programming competitions such as Spotify's Hockey Challenge.
+		My name is Erik Ihrén. Since an early age I've been into all kinds of technology, writing text-based adventure games and assembling computers in my early teens. I quickly got into the industry and interned at companies like <b>Netnod</b>, <b>Ericsson</b> and <b>Spotify</b>. I also travelled to South Africa to work at <b>Domain Name Services</b> for two months in the summer of 2013. I enjoy participating in programming events and competition and have several top placements from programming competitions such as Spotify's Hockey Challenge.
 		<br><br>
 		In my free time, I've worked on developing a multiplayer strategy game mod for Starcraft 2, called <b>Cruiser Command</b>. It's played by players around the world with an average rating of over 4.8/5 out of thousands of reviews. Personal projects are important to me, and I enjoy spending time working and experimenting with ideas I have.
 		<br><br>
-		I am currently working towards a Master's degree in Computer Science at the Royal Institute of Technology (KTH) in Stockholm, Sweden. I am in my fourth year out of five and I'm actively looking for full-time positions and other opportunities to improve as a programmer. I'm willing to relocate, especially for positions in America.
+		I am currently working towards a Master's degree in Computer Science at the Royal Institute of Technology (KTH) in Stockholm, Sweden. I am in my fourth year out of five and I'm actively looking for full-time positions and other opportunities to improve as a programmer. I'm willing to relocate, especially for positions in United States.
 		<br><br>
 		This site contains a portfolio with descriptions of some of the larger projects I've done as well as some general contact information.
 		My resume is available <a target="_blank" href="./personal/cv.pdf">here</a>.
@@ -218,6 +217,29 @@
 		<a href="./personal/images/crashcompile.png">
 		  <img class="thumbnail pull-right" src="./personal/images/crashcompilethumb.png" alt="...">
 		</a>
+	      </div>
+	    </div>
+	    <div class="project-special">
+	      <br>
+	    </div>
+	    <div class="row project-special project-homeautomation">
+	      <div class="col-md-8">
+		<p> Home Automation </p>
+		I love automating things in my apartment and hooking things up to voice control. My general server stands in the middle of my apartment hooked up to a microphone, speakers and a webcam. I'm always thinking up new things to add, but these are the current features. The microphone allows me to control things with my voice. The webcam works as surveillance while I'm not home. The speakers are used to give me reminders.
+		
+		<div class="readmore extended-homeautomation">
+		  <br>
+		  Voice control is currently done through an open-source library called <a href="https://github.com/jasperproject/jasper-client">Jasper</a>. I've started modifying this library heavily to improve the voice recognition. It first uses an offline Speech-to-text library called PocketSphinx to detect its activation word (Jasper). After recognizing the activation word it listens for an actual voice command. This part uses an online Speech-to-text library called Wit.ai. This combination along with my voice recognition improvements seem to be optimal for getting quick and correct results.
+		  <br><br>
+		  Along with this, I've also added some custom Jasper modules to control light and music. My version of the Jasper repository can also be found on <a href="https://github.com/Siretu/jasper-client">GitHub</a>.
+		  <br><br>
+		  The surveillance system continuously pings my smartphone over wifi, to detect if I'm home. When I'm not, it starts taking pictures and compares them to detect movement. When movement is detected, it saves the frames locally for later review and emails me to notify me about the potential intruder.
+		</div>
+		<br><br><a class="link" id="l_homeautomation" href="#homeautomation">Read more...</a>
+	      </div>
+	      <div class="col-md-4">
+		<br><br>
+		<img class="thumbnail pull-right" src="http://i0.wp.com/www.kid-mash.com/wp-content/uploads/2014/11/Kids-drawing-of-a-house-with-chimney.jpg?resize=222%2C222" alt="...">
 	      </div>
 	    </div>
 	  </div>
